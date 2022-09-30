@@ -59,10 +59,14 @@ nextISSTimesForMyLocation((error, passTimes) => {
   if (error) {
     return console.log("It didn't work!", error);
   }
-  
+
   // success, print out the deets!
   // console.log(passTimes);
   printPassTimes(passTimes);
 });
 
 // Next pass at Fri Jun 01 2021 14:36:08 GMT-0700 (Pacific Daylight Time) for 632 seconds!
+
+module.exports = {
+  printPassTimes
+};
